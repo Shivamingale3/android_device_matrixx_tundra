@@ -8,6 +8,8 @@ BOARD_VENDOR := motorola
 
 DEVICE_PATH := device/motorola/tundra
 
+BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
+
 # A/B
 AB_OTA_UPDATER := true
 
