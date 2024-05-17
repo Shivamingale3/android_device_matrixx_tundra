@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 The AwakenOS Project
+# Copyright (C) 2024 Project-Matrixx
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from tundra device
 $(call inherit-product, device/motorola/tundra/device.mk)
 
-# Inherit common PixelOS configurations
+# Inherit common LineageOS configurations
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Quick Tap
@@ -30,3 +30,20 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := motorola/tundra_g/tundra:11/T1SJ33.117-30-4/6a9b48:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
+
+# Matrixx Flags
+TARGET_BOOT_ANIMATION_RES := 1080
+MATRIXX_BUILD_TYPE := Unofficial
+MATRIXX_MAINTAINER := Shivam_Ingale
+MATRIXX_CHIPSET := SD888+
+MATRIXX_BATTERY := 4400mah
+MATRIXX_DISPLAY := 1080x2400
+TARGET_HAS_UDFPS := true
+WITH_GMS := true
+BUILD_GOOGLE_CONTACTS := true
+BUILD_GOOGLE_DIALER := true
+BUILD_GOOGLE_MESSAGE := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_EXCLUDES_AUXIO := true
+TARGET_EXCLUDES_VIA := true
