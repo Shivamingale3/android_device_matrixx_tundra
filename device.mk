@@ -207,8 +207,11 @@ PRODUCT_PACKAGES += \
     gnss_antenna_info.conf \
     gps.conf \
     izat.conf \
-    lowi.conf \
     sap.conf
+
+# GPS Configs
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/gps/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 PRODUCT_PACKAGES += \
     gnss@2.0-base.policy \
