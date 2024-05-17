@@ -371,7 +371,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
     libjson \
     libqsap_sdk \
-    libprotobuf-cpp-full \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
     librmnetctl
 
