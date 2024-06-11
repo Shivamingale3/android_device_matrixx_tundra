@@ -295,8 +295,7 @@ PRODUCT_PACKAGES += \
 
 # Moto hardware
 PRODUCT_PACKAGES += \
-    MotoActions \
-    MotoCommonOverlay
+    MotoActions
 
 # Native libraries whitelist
 PRODUCT_COPY_FILES += \
